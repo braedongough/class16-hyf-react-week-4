@@ -1,13 +1,15 @@
-import {useTheme} from './ThemeContext'
-import Todos from './Todo'
+// import Todos from './Todo'
+import Count from './Count'
+import {IncrementCount} from './IncrementCount'
+import DecrementCount from './DecrementCount'
 import './App.css'
 
 function App() {
-  const themeContext = useTheme()
-  console.log(themeContext)
   return (
     <div className='App'>
-      <Todos />
+      <Count />
+      <IncrementCount />
+      <DecrementCount />
     </div>
   )
 }

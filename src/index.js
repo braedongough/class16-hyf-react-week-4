@@ -3,12 +3,15 @@ import ReactDOM from 'react-dom'
 import './index.css'
 import App from './App'
 import ThemeProvider from './ThemeContext'
+import CountProvider from './CountContex'
 import reportWebVitals from './reportWebVitals'
 
 ReactDOM.render(
   <React.StrictMode>
     <ThemeProvider>
-      <App />
+      <CountProvider>
+        <App />
+      </CountProvider>
     </ThemeProvider>
   </React.StrictMode>,
   document.getElementById('root')
